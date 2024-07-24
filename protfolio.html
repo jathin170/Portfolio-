@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jathin Vallabhapurapu's Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('best-wallpapers-ever-from-giomgelo-92.jpg') no-repeat center center fixed;
+            background-size: cover;
+            background-position-x: center;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: rgba(244, 243, 243, 0.8);
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 1.2em;
+        }
+        header img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+        nav {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        nav button {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+            font-size: 1em;
+            border-radius: 5px;
+        }
+        nav button:hover {
+            background: #45a049;
+        }
+        .section {
+            display: none;
+            padding: 20px;
+        }
+        .section table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .section table, .section th, .section td {
+            border: 1px solid #ddd;
+        }
+        .section th, .section td {
+            padding: 8px;
+            text-align: left;
+        }
+        .section th {
+            background-color: #f2f2f2;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            border-radius: 8px;
+            margin-top: 50px;
+        }
+        .contact-form {
+            margin-top: 20px;
+        }
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background 0.3s;
+            font-size: 1em;
+            border-radius: 5px;
+        }
+        .contact-form button:hover {
+            background: #45a049;
+        }
+    </style>
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="jathin.jpg" alt="Profile Picture">
+            <h1>Jathin Vallabhapurapu</h1>
+            <p>I am a dedicated and passionate student currently pursuing my B.Tech in Computer Science and Engineering at SRM University.</p>
+            <p>My interests include web development, software engineering, and data science.</p>
+            <p>I enjoy solving complex problems and am always eager to learn new technologies.</p>
+        </header>
+        <nav>
+            <button onclick="showSection('education')">Education</button>
+            <button onclick="showSection('skills')">Skills</button>
+            <button onclick="showSection('projects')">My Projects</button>
+            <button onclick="showSection('contact')">Contact Info</button>
+        </nav>
+        <div class="section" id="education">
+            <h2>Education Qualifications</h2>
+            <table>
+                <tr>
+                    <th>Institution</th>
+                    <th>Degree</th>
+                    <th>Year</th>
+                </tr>
+                <tr>
+                    <td>SRM University</td>
+                    <td>B.Tech in CSE</td>
+                    <td>2022 - Present</td>
+                </tr>
+                <tr>
+                    <td>SRI CHAITANYA Junior College</td>
+                    <td>Intermediate</td>
+                    <td>Completed in 2022</td>
+                </tr>
+                <tr>
+                    <td>SRI CHAITANYA School</td>
+                    <td>Schooling</td>
+                    <td>Completed in 2020</td>
+                </tr>
+            </table>
+        </div>
+        <div class="section" id="skills">
+            <h2>Specialization Skills</h2>
+            <table>
+                <tr>
+                    <th>Skills</th>
+                    <th>Proficiency</th>
+                </tr>
+                <tr>
+                    <td>Programming Languages</td>
+                    <td>Java, Python, C++, C</td>
+                </tr>
+                <tr>
+                    <td>Web Development</td>
+                    <td>HTML, CSS, JavaScript</td>
+                </tr>
+                <tr>
+                    <td>Database Management</td>
+                    <td>MySQL, MongoDB</td>
+                </tr>
+                <tr>
+                    <td>Tools & Technologies</td>
+                    <td>Git, Docker, Kubernetes</td>
+                </tr>
+                <tr>
+                    <td>Cybersecurity and Ethical Hacking</td>
+                    <td>Proficient</td>
+                </tr>
+            </table>
+        </div>
+        <div class="section" id="projects">
+            <h2>My Projects</h2>
+            <table>
+                <tr>
+                    <th>Project Name</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>Bank Management System</td>
+                    <td>Bank Management system Using C</td>
+                </tr>
+                <tr>
+                    <td>Ticket Booking System</td>
+                    <td>Ticket Booking System Using DSA (graphs)</td>
+                </tr>
+                <tr>
+                    <td>Bike Rental System</td>
+                    <td>Bike Rental System Using C++</td>
+                </tr>
+            </table>
+        </div>
+        <div class="section" id="contact">
+            <h2>Contact Info</h2>
+            <p>Email: <a href="mailto:jathin.vallabhapurapu@gmail.com"><i class="fas fa-envelope"></i> jathin.vallabhapurapu@gmail.com</a></p>
+            <p>Phone: +91-9133787138</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/jathinvallabhapurapu" target="_blank"><i class="fab fa-linkedin"></i> linkedin.com</a></p>
+            <p>GitHub: <a href="https://github.com/jathin170" target="_blank"><i class="fab fa-github"></i> github.com</a></p>
+            <div class="contact-form">
+                <h2>Message Me</h2>
+                <form action="process_form.php" method="post">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+        <footer>
+            &copy; 2024 Jathin Vallabhapurapu. All rights reserved.
+        </footer>
+    </div>
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                if (section.id === sectionId) {
+                    section.style.display = 'block';
+                } else {
+                    section.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>
