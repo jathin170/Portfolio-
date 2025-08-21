@@ -820,97 +820,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Notifications",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": true,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [
-                {
-                  "id": "6be5ed29-126b-4f63-8cf2-a4fa9034bdc0",
-                  "title": "New STRIDE threat",
-                  "status": "Open",
-                  "severity": "High",
-                  "type": "Tampering",
-                  "description": "Provide a description for this threat",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 22,
-                  "score": ""
-                }
-              ],
-              "threatFrequency": {
-                "tampering": 1,
-                "informationDisclosure": 0,
-                "denialOfService": 0
-              }
-            },
-            "labels": [
-              "Notifications"
-            ],
-            "id": "cf0f7806-f040-4169-b052-df1ea71076f2",
-            "source": {
-              "cell": "f8a8c62d-d48d-4c64-bb19-e7047b4c5162",
-              "port": "db25e9f6-2102-4a08-b1a1-f3a3e416be72"
-            },
-            "target": {
-              "cell": "55f00864-05fc-4e0d-84a9-cd75d439500d",
-              "port": "7401468a-6fcc-473e-9519-b61b6c5de2ea"
-            },
-            "vertices": [
-              {
-                "x": 430,
-                "y": -10
-              },
-              {
-                "x": 430,
-                "y": -40
-              },
-              {
-                "x": 450,
-                "y": 40
-              },
-              {
-                "x": 280,
-                "y": -50
-              },
-              {
-                "x": 320,
-                "y": 80
-              },
-              {
-                "x": 130,
-                "y": -230
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Data ",
               "description": "",
               "outOfScope": false,
@@ -966,16 +875,6 @@
             "target": {
               "cell": "b5308d67-5eca-4ae3-8a39-b5e3461715af",
               "port": "db25e9f6-2102-4a08-b1a1-f3a3e416be72"
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
             }
           },
           {
@@ -1294,6 +1193,103 @@
             }
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "7f267a4e-3dee-460d-9a8e-b3f2968d53a1",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 30,
+                  "score": ""
+                },
+                {
+                  "id": "2b8a7760-1579-4137-80d8-c354da3c5304",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Denial of service",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 31,
+                  "score": ""
+                },
+                {
+                  "id": "a89cca0d-24b7-443f-af68-6ec5f113dbcf",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 32,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 1,
+                "denialOfService": 1
+              }
+            },
+            "labels": [
+              "Data Flow"
+            ],
+            "id": "ba18b89c-6ba1-4b4a-82a7-fd327e65655e",
+            "source": {
+              "x": 72,
+              "y": -355
+            },
+            "target": {
+              "cell": "f8a8c62d-d48d-4c64-bb19-e7047b4c5162",
+              "port": "db25e9f6-2102-4a08-b1a1-f3a3e416be72"
+            },
+            "vertices": [
+              {
+                "x": 330,
+                "y": -190
+              }
+            ]
+          },
+          {
             "position": {
               "x": 838,
               "y": -100.00000000000006
@@ -1479,6 +1475,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Course Faculty",
-    "threatTop": 28
+    "threatTop": 32
   }
 }
